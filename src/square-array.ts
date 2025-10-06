@@ -1,4 +1,4 @@
-const squareSimpleFor = (arr: number[]): number[] => {
+export const squareSimpleFor = (arr: number[]): number[] => {
     const result: number[] = [];
     for (let i = 0; i < arr.length; i++) {
         result.push(arr[i]! ** 2);
@@ -6,7 +6,7 @@ const squareSimpleFor = (arr: number[]): number[] => {
     return result;
 };
 
-const squareForEach = (arr: number[]): number[] => {
+export const squareForEach = (arr: number[]): number[] => {
     const result: number[] = [];
     arr.forEach(num => {
         result.push(num ** 2);
