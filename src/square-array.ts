@@ -5,3 +5,11 @@ const squareSimpleFor = (arr: number[]): number[] => {
     }
     return result;
 };
+
+const squareForEach = (arr: number[]): number[] => {
+    const result: number[] = [];
+    arr.forEach(num => {
+        result.push(num ** 2);
+    });
+    return result;
+};
